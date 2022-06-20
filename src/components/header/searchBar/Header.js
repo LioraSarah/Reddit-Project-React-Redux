@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <header>
             <div id="logo">
-                <img/>
+                <img scr="../../media/logo.png" alt="redditSearch (logo)" />
             </div>
             <div id="search">
                 <Search />
