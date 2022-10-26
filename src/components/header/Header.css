@@ -1,0 +1,33 @@
+header {
+    /*border-bottom: 1px solid lightgrey;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 5px 20px gray;
+    padding: 1% 0;
+}
+
+#logo img {
+    height: 60px;
+}
+
+#logo {
+    margin-left: 5%;
+}
+
+#profile img {
+    max-height: 50px;
+    border-radius: 100%;
+}
+
+#profile {
+    /* margin-top: 1.6%; */
+    margin-right: 5%;
+}
+
+#search {
+    flex-grow: 1;
+    max-width: 500px;
+    margin-left: -2%;
+}

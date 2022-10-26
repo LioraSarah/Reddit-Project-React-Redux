@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchTerm, clearSearchTerm, selectSearchTerm } from '../../../features/search/searchSlice.js';
-
+import "./Search.css"
 import searchIconUrl from "../../../media/search.png";
 import clearIconUrl from "../../../media/close.png";
 
@@ -21,13 +21,13 @@ export const Search = () => {
 
     return (
         <div id="search-container">
-            <img id="search-icon" alt="search" src={searchIconUrl} height="20px" />
+            <img id="search-icon" alt="search" src={searchIconUrl} />
             <input
                 id="search"
                 type="text"
                 value={searchTerm}
                 onChange={onSearchTermChangeHandler}
-                placeholder="Search recipes"
+                placeholder="Search me"
             />
             {searchTerm.length > 0 && (
                 <button
@@ -35,7 +35,7 @@ export const Search = () => {
                 type="button"
                 id="search-clear-button"
                 >
-                <img src={clearIconUrl} alt="X" height="10px" />
+                <img src={clearIconUrl} alt="X" id='search-clear-icon' />
                 </button>
             )}
         </div>
